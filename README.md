@@ -10,7 +10,7 @@ considered clever.
 
 ## Building a Drum Machine
 
-This exercise assumes you are somewhat familiar with drum machines. 
+This exercise assumes you are somewhat familiar with drum machines.
 If you aren't
 please read http://en.wikipedia.org/wiki/Drum_machine
 
@@ -27,7 +27,7 @@ generate a real time visual representation of the sequence being played.
 
 Here is some pseudo code showing the expected interaction and one way to
 represent the output (you are encouraged to find a better way).
-You can use a command line output, work in the browser or send use an electric circuit.
+You can use a command line output, work in the browser or use an electric circuit.
 Use whatever programming language you want, as long as we can execute your solution.
 
 ```
@@ -70,7 +70,7 @@ the output speed at a BPM of 128)
 
 ### Timing information
 
-Outputing the patterns in tempo isn't required for this exercise, 
+Outputing the patterns in tempo isn't required for this exercise,
 however if you wish to do so you might need some extra information.
 At a 4/4 time signature of 60 BPM (beats per minute), we get 1 beat per second.
 We can assume that 8 steps = 1 bar, representing 4 beats.
