@@ -79,7 +79,7 @@ In other words, a 8 step pattern would take `(60/BPM)*4` seconds to play and eac
 
 ### Extra mile
 
-* Try mix and matching patters of different durations (8, 16, 32 steps),
+* Try mix and matching patterns of different durations (8, 16, 32 steps),
   note that if you have 2 patterns, one 8 and one 16, the 8 should play
   twice while the 16 plays once.
 * Add support for velocity (the amplitude/volume of a note).
