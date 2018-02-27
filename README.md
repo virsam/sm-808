@@ -16,7 +16,7 @@ please read http://en.wikipedia.org/wiki/Drum_machine
 
 Your challenge is to code the sequencer part of our Drum Machine which
 we called SM-808. More precisely you will need to sequence and "play"
-your own version of the famous [four-on-the-floor](http://en.wikipedia.org/wiki/Four_on_the_floor_(music)) rythm pattern.
+your own version of the famous [four-on-the-floor](http://en.wikipedia.org/wiki/Four_on_the_floor_(music)) rhythm pattern.
 
 ![Example pattern to implement](/Four_to_the_floor_Roland_TR-707.jpg?raw=true)
 
