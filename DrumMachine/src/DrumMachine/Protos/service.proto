@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "DrumMachine.protos";
+package DrumMachine;
+
+service DrumMachine {
+    // To play the programmed music
+    rpc PlayMusicStream (ProgrammedMusicRequest) returns (stream MusicSteamResponse);
+}
+
+enum DrumPatternTypes {
+	NONE = 0;
+    KICK = 1;
+    SNARE = 2;
+    HITHAT = 3;
+}
+
+message ProgrammedPattern {
+    enum Steps {
+        EIGHT = 0;
+        SIXTEEN = 1;
+        THIRTY_TWO = 2;
+    }
+    DrumPatternTypes type = 1;
+    Steps stepCount = 2;
+	// represents the programmed step for a pattern. If not set, then false.
+    repeated bool programmedSteps = 3;
+}
+
+message ProgrammedMusicRequest {
+    int32 bpm = 1;
+    repeated ProgrammedPattern pattern = 2;
+}
+
+message MusicSteamResponse {
+    repeated DrumPatternTypes beats = 1;
+}

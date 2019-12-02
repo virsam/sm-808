@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  protogen:
+    image: DrumMachine
+    build:
+      context: .
+    ports:
+      - "5001:5001"
