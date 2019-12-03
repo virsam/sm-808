@@ -1,9 +1,24 @@
 version: '3.4'
 
 services:
-  protogen:
-    image: DrumMachine
+  server-grpc:
+    image: drum-machine-server
     build:
       context: .
+      dockerfile: src/DrumMachine/Dockerfile
     ports:
       - "5001:5001"
+    environment:
+      - ASPNETCORE_HTTPS_PORT=5001
+      - ASPNETCORE_KESTREL_CERTIFICATE_PATH=/root/.aspnet/https/DrumMachine.pfx
+      - ASPNETCORE_KESTREL_CERTIFICATE_PASSWORD=YourStrongPassword
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https/
+
+  client-grpc:
+    image: DrumMachineClient
+    build:
+      context: .
+      dockerfile: src/DrumMachineClient/Dockerfile
+    depends_on:
+      - server-grpc
