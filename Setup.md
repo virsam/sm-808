@@ -27,3 +27,10 @@ Our client is a console app which is powered by the same service contract.
 2. Run the client. Open another Visual Studio and debug `src\DrumMachineClient`.
 3. In `DrumMachineClient`, you can either use pre-defined request `BuildFirstRequest()` or `BuildSecondRequest()`, or build your own.
 4. The output is printed in tempo on the client console. (Have a very low bpm to increase the gap between the beats)
+
+### Issuing and Trusting dev certificate
+
+If you ever have issues trying to register dev-cert follow instructions from
+
+[Github](https://github.com/aspnet/AspNetCore/issues/9528)  
+[Microsoft doc](https://go.microsoft.com/fwlink/?linkid=848054)
